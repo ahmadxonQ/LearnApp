@@ -7,8 +7,6 @@
 
 import Foundation
 import UIKit
-
-import UIKit
 import FloatingPanel
 
 class BottomSheetViewController: UIViewController {
@@ -60,3 +58,5 @@ class BottomSheetViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
 }
+
+

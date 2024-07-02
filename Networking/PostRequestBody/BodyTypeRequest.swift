@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public protocol BodyTypeRequest {
+    func setBodyInRequest(_ request: inout URLRequest) throws
+}

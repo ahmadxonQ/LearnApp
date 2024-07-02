@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class FileDownloaderConfig {
+    let maxParallelDownloads: Int
+
+    init(maxParallelDownloads: Int = 4) {
+        self.maxParallelDownloads = maxParallelDownloads
+    }
+}

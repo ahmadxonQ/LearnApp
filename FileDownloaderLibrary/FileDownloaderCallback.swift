@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol FileDownloadCallback {
+    func onComplete(request: FileDownloadRequest)
+    func onFail(request: FileDownloadRequest, error: String)
+    func onCancel(request: FileDownloadRequest)
+}
+

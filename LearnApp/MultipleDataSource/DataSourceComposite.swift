@@ -7,7 +7,6 @@
 
 import UIKit
 class TableViewDataSourceComposed: NSObject ,UITableViewDataSource {
-    
     let dataSources: [UITableViewDataSource]
     
     init(dataSources: [UITableViewDataSource]) {
@@ -18,7 +17,6 @@ class TableViewDataSourceComposed: NSObject ,UITableViewDataSource {
         dataSources.reduce(0) { partialResult, dataSource in
             print("partial result",partialResult)
             return partialResult + (dataSource.numberOfSections?(in: tableView) ?? 1)
-            
         }
     }
     

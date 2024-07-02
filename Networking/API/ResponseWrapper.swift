@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct ResponseWrapper<T:Decodable>: Decodable {
+    let message: String
+    let success: Bool
+    let data: T
+}
+
+struct OptionalResponseWrapper<T: Decodable>: Decodable {
+    let message: String?
+    let success: Bool?
+    let data: T?
+}
